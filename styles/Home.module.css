@@ -1,10 +1,52 @@
-
 .container {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    padding-top: 35px;
-    background-color: #171717;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
+.h1 {
+    margin-bottom: 20px;
+}
+
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(50, 20px);
+    grid-template-rows: repeat(50, 20px);
+    border-collapse: collapse;
+}
+
+
+.celula {
+    width: 20px;
+    height: 20px;
+    border-collapse: collapse;
+    background-color: #317C11;
+}
+
+.arvore {
+    background-image: url('../public/imgs/arvore.png');
+    background-size: contain;
+    
+}
+
+.pedra {
+    background-image: url('../public/imgs/pedra.webp');
+    background-size: contain;
+}
+
+.capim {
+    background-image: url('../public/imgs/capim.jpg');
+    background-size: contain;
+}
+
+.barro {
+    background-image: url('../public/imgs/solo.jpg');
+    background-size: contain;
+}
+
+.objetivo {
+    background-image: url('../public/imgs/alvo.png');
+    background-size: contain;
 }
